@@ -1,0 +1,28 @@
+'.source.c':
+  'for cycle':
+    'prefix': 'for'
+    'body': """
+    for (${1:i} = ${2:0}; ${1:i} < ${3:n}; ${1:i}++)
+    {
+        $4
+    }
+    """
+
+  'while cycle':
+    'prefix': 'while'
+    'body': """
+    while (${1:true})
+    {
+        $2
+    }
+    """
+
+
+  'if statement':
+    'prefix': 'if'
+    'body': """
+    if (${1:true})
+    {
+        $2
+    }
+    """
